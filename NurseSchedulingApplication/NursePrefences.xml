@@ -1,0 +1,384 @@
+<?xml version="1.0" standalone="yes"?>
+<NURSEPREFERENCES>
+  <NURSE>
+    <nu_Id />
+    <nu_location />
+    <nu_shiftDate />
+    <nu_s1 />
+    <nu_s2 />
+    <nu_s3 />
+    <nu_s4 />
+    <nu_isAllocated />
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/10/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/11/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/12/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/13/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/14/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/15/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/16/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/17/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/18/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/19/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/20/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/21/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/22/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/23/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/24/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/25/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/26/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/27/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/28/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/29/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/7/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>2</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>6/8/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/10/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/11/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/12/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/13/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/14/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/15/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/16/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/17/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/18/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>Y</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/19/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>Y</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/20/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/21/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/6/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/7/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>Y</nu_s2>
+    <nu_s3>N</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+  <NURSE>
+    <nu_Id>1</nu_Id>
+    <nu_location>Laval</nu_location>
+    <nu_shiftDate>7/8/2021 12:00:00 AM</nu_shiftDate>
+    <nu_s1>N</nu_s1>
+    <nu_s2>N</nu_s2>
+    <nu_s3>Y</nu_s3>
+    <nu_isAllocated>N</nu_isAllocated>
+    <ID />
+  </NURSE>
+</NURSEPREFERENCES>

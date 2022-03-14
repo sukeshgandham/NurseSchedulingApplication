@@ -1,0 +1,242 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="NurseSchedulingApplication.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<title>Sidebar 05</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+    <link href="Common/CSS/Custom/style.css" rel="stylesheet" />
+    <link href="Common/CSS/Custom/pikaday.css" rel="stylesheet" />
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h1><a href="index.html" class="logo">Nurse <span>Nurse Safe Guard</span></a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li>
+                            <a href="#"><span class="fa fa-home mr-3"></span>Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><span class="fa fa-briefcase mr-3"></span>Provide Availabilty</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-user mr-3"></span>Update Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-user mr-3"></span>Update Preferences</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-suitcase mr-3"></span>Allocated Shifts</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content" class="p-4 p-md-5 pt-5">
+                <h1>Provide Preferences and Availability</h1>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <h2>From</h2>
+                            <input type="text" class="form-control" placeholder="Date of birth" value="" id="txtbxnfrom" style="width: 500px;" />
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <h2>To</h2>
+                            <input type="text" class="form-control" placeholder="Date of birth" value="" id="txtbxnto" style="width: 500px;" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <h3>Location</h3>
+                           <select class="form-control">
+                                                <option class="hidden" selected="" disabled="">Please select your location</option>
+                                                <option>Laval</option>
+                                                <option>Notredam</option>
+                                                <option>Montreal centre</option>
+                                            </select>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <h3>Available</h3>
+                            <select class="form-control">
+                                <option class="hidden" selected="" disabled="">Please select your availability</option>
+                                <option>Y</option>
+                                <option>N</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <h3>select shifts</h3>
+                            <table style="width: 100%;">
+                                <tr>
+                                     <td>
+                                        
+                                    </td>
+                                    <td>
+                                        Shift 1 (8 AM - 8 PM)
+                                    </td>
+                                    <td>
+                                         Shift 2 (8PM - 12 AM)
+                                    </td>
+                                    <td>
+                                         Shift 3 (12am - 8am)
+                                    </td>
+                                    <td>
+                                         Shift 4 (8pm-7am)
+                                    </td>
+                                </tr>
+                                <tr>
+                                     <td style="font:bold">Monday</td>
+                                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
+                                        
+                                        <asp:ListItem></asp:ListItem>
+                                        <asp:ListItem></asp:ListItem>
+                                        <asp:ListItem></asp:ListItem>
+                                        <asp:ListItem></asp:ListItem>
+                                        
+                                    </asp:RadioButtonList>
+                                   <%-- <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>--%>
+                                </tr>
+                                <tr>
+                                    <td style="font:bold">Tuesday</td>
+                                    <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                                <tr>
+                                     <td style="font:bold">wednesday</td>
+                                    <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                                 <tr>
+                                    <td style="font:bold">Thursday</td>
+                                    <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="font:bold">Friday</td>
+                                   <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="font:bold">Saturday</td>
+                                   <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                                <tr>
+                                   <td style="font:bold">Sunday</td>
+                                   <td>
+                                        <input id="Radio1" type="radio" /></td>
+                                    <td><input id="Radio2" type="radio" /></td>
+                                    <td><input id="Radio3" type="radio" /></td>
+                                    <td><input id="Radio4" type="radio" /></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group">
+                        <input type="submit" class="btnRegister" value="Submit" style="padding:right;">
+                            </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </div>
+    
+    
+        <script src="Common/JS/Custom/jquery.min.js"></script>
+        <script src="Common/JS/Custom/popper.js"></script> 
+        <script src="Common/JS/Custom/bootstrap.min.js"></script>   
+        <script src="Common/JS/Custom/main.js"></script>
+         <script src="Common/JS/Custom/pikaday.js"></script>
+        <script type="text/javascript">
+        var picker = new Pikaday(
+    {
+        field: document.getElementById('txtbxnfrom'),
+        firstDay: 1,
+        minDate: new Date('2021-01-01'),
+        maxDate: new Date('2030-12-31'),
+        yearRange: [2021, 2030],
+        numberOfMonths: 1,
+        theme: 'dark-theme'
+              });
+
+    var picker1 = new Pikaday(
+    {
+        field: document.getElementById('txtbxnto'),
+        firstDay: 1,
+        minDate: new Date('2021-01-01'),
+        maxDate: new Date('2030-12-31'),
+        yearRange: [2021, 2030],
+        numberOfMonths: 1,
+        theme: 'dark-theme'
+    });
+</script>
+  </body>
+</html>

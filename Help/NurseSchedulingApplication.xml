@@ -1,0 +1,1409 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NurseSchedulingApplication</name>
+    </assembly>
+    <members>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Load event of the Page control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.ImageButton1_Click(System.Object,System.Web.UI.ImageClickEventArgs)">
+            <summary>
+            Handles the Click event of the ImageButton1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Web.UI.ImageClickEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.Calendar1_SelectionChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the Calendar1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.Calendar1_DayRender(System.Object,System.Web.UI.WebControls.DayRenderEventArgs)">
+            <summary>
+            Handles the DayRender event of the Calendar1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.BindGrid">
+            <summary>
+            Binds the grid.
+            </summary>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.btnAllocate_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnAllocate control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.AllocateNurses">
+            <summary>
+            Allocates the nurses.
+            </summary>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.CheckRequestsWithAvailableNurses">
+            <summary>
+            Checks the requests with available nurses.
+            </summary>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.getNursesbylocationDate(System.Data.SqlClient.SqlConnection)">
+            <summary>
+            Gets the nursesbylocation date.
+            </summary>
+            <param name="asqlConnection">The asql connection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.getUnallocatednurses(System.Data.SqlClient.SqlConnection)">
+            <summary>
+            Gets the unallocatednurses.
+            </summary>
+            <param name="asqlConnection">The asql connection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.UpdateAllocatedNursesTable(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Updates the allocated nurses table.
+            </summary>
+            <param name="ahospitalId">The ahospital identifier.</param>
+            <param name="s1">The s1.</param>
+            <param name="s2">The s2.</param>
+            <param name="s3">The s3.</param>
+            <param name="s4">The s4.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.UpdateShiftAllocationTable(System.String)">
+            <summary>
+            Updates the shift allocation table.
+            </summary>
+            <param name="ajsonunallocatedtable">The ajsonunallocatedtable.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.UpdatehosUnAlloColumn(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            Updatehoses the un allo column.
+            </summary>
+            <param name="acount">The acount.</param>
+            <param name="ahospitalId">The ahospital identifier.</param>
+            <param name="ashiftDate">The ashift date.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.UpdateNursePreferencesTable(System.Collections.Generic.List{NurseSchedulingApplication.Helper.ShiftAllocations})">
+            <summary>
+            Updates the nurse preferences table.
+            </summary>
+            <param name="anursePref">The anurse preference.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.Updateh_UnAllocatedRequeststable(System.Collections.Generic.List{NurseSchedulingApplication.Helper.UnAllocatedCount})">
+            <summary>
+            Update the un allocated requests table.
+            </summary>
+            <param name="aupdateallocated">The aupdateallocated.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.NotifyNurseUsers(System.Collections.Generic.List{NurseSchedulingApplication.Helper.ShiftAllocations})">
+            <summary>
+            Notifies the nurse users.
+            </summary>
+            <param name="allocations">The allocations.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.NotifyHospital(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTime,System.Int32)">
+            <summary>
+            Notify the hospital.
+            </summary>
+            <param name="as1count">The as1count.</param>
+            <param name="as2count">The as2count.</param>
+            <param name="as3count">The as3count.</param>
+            <param name="as4count">The as4count.</param>
+            <param name="asum">The asum.</param>
+            <param name="ashiftdate">The ashiftdate.</param>
+            <param name="ahospitalID">The ahospital identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.SendEmail(System.String,System.String,System.String)">
+            <summary>
+            Sends the email.
+            </summary>
+            <param name="astrtoaddress">The astrtoaddress.</param>
+            <param name="astrsubject">The astrsubject.</param>
+            <param name="astrbody">The astrbody.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.btnretrieveRequests_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnretrieveRequests control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyInterface.DisplayMessage">
+            <summary>
+            Displays the message.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.TextBox12">
+            <summary>
+            TextBox12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.ImageButton1">
+            <summary>
+            ImageButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.Calendar1">
+            <summary>
+            Calendar1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.btnretrieveRequests">
+            <summary>
+            btnretrieveRequests control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.SqlDataSource1">
+            <summary>
+            SqlDataSource1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.grdunallocated">
+            <summary>
+            grdunallocated control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.unallocatedsqlsource">
+            <summary>
+            unallocatedsqlsource control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.grdviewnurses">
+            <summary>
+            grdviewnurses control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.nursesqldatasource">
+            <summary>
+            nursesqldatasource control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyInterface.btnAllocate">
+            <summary>
+            btnAllocate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyRegistration.btnAgencyReg_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnAgencyReg control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyRegistration.Inserttouserstable(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Inserttouserstables the specified ausername.
+            </summary>
+            <param name="ausername">The ausername.</param>
+            <param name="apassword">The apassword.</param>
+            <param name="aemail">The aemail.</param>
+            <param name="ausertype">The ausertype.</param>
+            <param name="aID">a identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.AgencyRegistration.DisplayMessage">
+            <summary>
+            Displays the message.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxagencyname">
+            <summary>
+            txtbxagencyname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxaddress">
+            <summary>
+            txtbxaddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxphone">
+            <summary>
+            txtbxphone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.selectquestion">
+            <summary>
+            selectquestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxanswer">
+            <summary>
+            txtbxanswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtAgencyRegNum">
+            <summary>
+            txtAgencyRegNum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxlocation">
+            <summary>
+            txtbxlocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxUserID">
+            <summary>
+            txtbxUserID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxemail">
+            <summary>
+            txtbxemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxpassword">
+            <summary>
+            txtbxpassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.txtbxcnfrmpassword">
+            <summary>
+            txtbxcnfrmpassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.AgencyRegistration.btnAgencyReg">
+            <summary>
+            btnAgencyReg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.DisplayMessage.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.HospitalRegistration.btnHospitalReg_Click1(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click1 event of the btnHospitalReg control.
+            registers the hospital user to the database
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.HospitalRegistration.Inserttouserstable(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Inserttouserstables the specified ausername.
+            </summary>
+            <param name="ausername">The ausername.</param>
+            <param name="apassword">The apassword.</param>
+            <param name="aemail">The aemail.</param>
+            <param name="ausertype">The ausertype.</param>
+            <param name="aID">a identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.HospitalRegistration.DisplayMessage">
+            <summary>
+            Displays the message.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxihospitalname">
+            <summary>
+            txtbxihospitalname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxiAddress">
+            <summary>
+            txtbxiAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxihospitalphone">
+            <summary>
+            txtbxihospitalphone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.selectsecurityques">
+            <summary>
+            selectsecurityques control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxihospitalAnswer">
+            <summary>
+            txtbxihospitalAnswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospitalemail">
+            <summary>
+            txtbxhospitalemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospitalauthID">
+            <summary>
+            txtbxhospitalauthID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospitalLocation">
+            <summary>
+            txtbxhospitalLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospiuserid">
+            <summary>
+            txtbxhospiuserid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospitalpwd">
+            <summary>
+            txtbxhospitalpwd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.txtbxhospitalcnfmpwd">
+            <summary>
+            txtbxhospitalcnfmpwd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.HospitalRegistration.btnHospitalReg">
+            <summary>
+            btnHospitalReg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseAllocatedShifts.lblusername">
+            <summary>
+            lblusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseAllocatedShifts.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseAllocatedShifts.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseAllocatedShifts.SqlDataSource1">
+            <summary>
+            SqlDataSource1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.Home.DisplayMessage">
+            <summary>
+            Displays the message.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.lblusername">
+            <summary>
+            lblusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.TextBox1">
+            <summary>
+            TextBox1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.ImageButton1">
+            <summary>
+            ImageButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.Calendar1">
+            <summary>
+            Calendar1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.TextBox2">
+            <summary>
+            TextBox2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.ImageButton2">
+            <summary>
+            ImageButton2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.Calendar2">
+            <summary>
+            Calendar2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.ddlilocation">
+            <summary>
+            ddlilocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList1">
+            <summary>
+            RadioButtonList1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList2">
+            <summary>
+            RadioButtonList2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList3">
+            <summary>
+            RadioButtonList3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList4">
+            <summary>
+            RadioButtonList4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList5">
+            <summary>
+            RadioButtonList5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList6">
+            <summary>
+            RadioButtonList6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.RadioButtonList7">
+            <summary>
+            RadioButtonList7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Home.btnsave">
+            <summary>
+            btnsave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Load event of the Page control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.btnRegister_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnRegister control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.Calendar1_SelectionChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the Calendar1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.Calendar1_DayRender(System.Object,System.Web.UI.WebControls.DayRenderEventArgs)">
+            <summary>
+            Handles the DayRender event of the Calendar1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.CallStoredProcedure(System.String)">
+            <summary>
+            Calls the stored procedure. Pass the Json schema to the stored procedure.
+            </summary>
+            <param name="ajsonpref">The ajsonpref.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.InsertintoHospitalReqTable(System.Int32)">
+            <summary>
+            Insert user into the hospital requests table.
+            </summary>
+            <param name="ahospitalID">The ahospital identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.InsertintoUnAllocatedHospitalReqTable(System.Int32)">
+            <summary>
+            Insert users into the un allocated hospital requests table.
+            </summary>
+            <param name="ahospitalid">The ahospitalid.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.InsertUnAllocated(System.Int32)">
+            <summary>
+            Inserts the un allocated to the list collection.
+            </summary>
+            <param name="aHopsitalReqId">a hopsital req identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.ImageButton1_Click(System.Object,System.Web.UI.ImageClickEventArgs)">
+            <summary>
+            Handles the Click event of the ImageButton1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Web.UI.ImageClickEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Hopsital.DisplayMessage">
+            <summary>
+            Displays the message.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.TextBox1">
+            <summary>
+            TextBox1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.ImageButton1">
+            <summary>
+            ImageButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.Calendar1">
+            <summary>
+            Calendar1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.ddllocation">
+            <summary>
+            ddllocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.txtbxShift1">
+            <summary>
+            txtbxShift1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.txtbxShift2">
+            <summary>
+            txtbxShift2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.txtbxShift3">
+            <summary>
+            txtbxShift3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.txtbxShift4">
+            <summary>
+            txtbxShift4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Hopsital.btnRegister">
+            <summary>
+            btnRegister control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.Login.LoginButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Used to check username and password against the database, by passing
+            the username and passwprd. Only authenticated used would be able to login
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Login.GetUserType(System.Int32)">
+            <summary>
+            Get the user type from the database
+            </summary>
+            <example>Nurse, Agenyc, Hospital</example>
+            <param name="auserID"></param>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.UserName">
+            <summary>
+            UserName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.UserNameRequired">
+            <summary>
+            UserNameRequired control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.Password">
+            <summary>
+            Password control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.PasswordRequired">
+            <summary>
+            PasswordRequired control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.FailureText">
+            <summary>
+            FailureText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.LoginButton">
+            <summary>
+            LoginButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Login.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseDisplay.lblusername">
+            <summary>
+            lblusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseDisplay.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseDisplay.grdviewAllocatedslots">
+            <summary>
+            grdviewAllocatedslots control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.NurseDisplay.SqlDataSource1">
+            <summary>
+            SqlDataSource1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.radiobutton.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.radiobutton.TextBox1">
+            <summary>
+            TextBox1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.radiobutton.TextBox2">
+            <summary>
+            TextBox2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.Registration.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnSave control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Registration.btnNurseRegister_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnNurseRegister control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Registration.Insertuserstable(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Insertuserstables the specified ausername.
+            </summary>
+            <param name="ausername">The ausername.</param>
+            <param name="apassword">The apassword.</param>
+            <param name="aemail">The aemail.</param>
+            <param name="ausertype">The ausertype.</param>
+            <param name="aID">a identifier.</param>
+        </member>
+        <member name="M:NurseSchedulingApplication.Registration.DisplayMessage">
+            <summary>
+            Displays the message to the user.
+            </summary>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxnfirstname">
+            <summary>
+            txtbxnfirstname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxnrlastname">
+            <summary>
+            txtbxnrlastname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxndob">
+            <summary>
+            txtbxndob control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxemail">
+            <summary>
+            txtbxemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.selectqualifications">
+            <summary>
+            selectqualifications control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.selectsecurityques">
+            <summary>
+            selectsecurityques control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxsecanswer">
+            <summary>
+            txtbxsecanswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxnaddress">
+            <summary>
+            txtbxnaddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtEmpphone">
+            <summary>
+            txtEmpphone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.selectdesignation">
+            <summary>
+            selectdesignation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.selectyearsofexp">
+            <summary>
+            selectyearsofexp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxUserID">
+            <summary>
+            txtbxUserID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxpwd">
+            <summary>
+            txtbxpwd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.txtbxconpwd">
+            <summary>
+            txtbxconpwd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Registration.btnNurseRegister">
+            <summary>
+            btnNurseRegister control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:NurseSchedulingApplication.ResetPassword.btnreset_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the btnreset control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.selectusertype">
+            <summary>
+            selectusertype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.txtbxUserID">
+            <summary>
+            txtbxUserID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.txtbxpassword">
+            <summary>
+            txtbxpassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.txtbxcnfrmpassword">
+            <summary>
+            txtbxcnfrmpassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.selectquestion">
+            <summary>
+            selectquestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.txtbxanswer">
+            <summary>
+            txtbxanswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.ResetPassword.btnreset">
+            <summary>
+            btnreset control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.SiteMaster.MainContent">
+            <summary>
+            MainContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Site_Mobile.HeadContent">
+            <summary>
+            HeadContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Site_Mobile.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Site_Mobile.FeaturedContent">
+            <summary>
+            FeaturedContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.Site_Mobile.MainContent">
+            <summary>
+            MainContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdatePreferences.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdatePreferences.lblusername">
+            <summary>
+            lblusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdatePreferences.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdatePreferences.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdatePreferences.SqlDataSource1">
+            <summary>
+            SqlDataSource1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdateProfile.lblusername">
+            <summary>
+            lblusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdateProfile.lblloggedinusername">
+            <summary>
+            lblloggedinusername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdateProfile.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:NurseSchedulingApplication.UpdateProfile.SqlDataSource1">
+            <summary>
+            SqlDataSource1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

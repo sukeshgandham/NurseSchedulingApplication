@@ -33,6 +33,8 @@ namespace NurseSchedulingApplication
             {
                 using (SqlCommand cmd = new SqlCommand("Validate_User"))
                 {
+                    
+
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Username", UserName.Text);
                     cmd.Parameters.AddWithValue("@Password", Password.Text);

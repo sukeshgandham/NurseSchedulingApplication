@@ -29,6 +29,16 @@
     ResourceGroupName: 'NurseSchedulingApplication20220314041830ResourceGroup'
     SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students(f1dce4b1-2434-4958-82ff-d1b47372496a)'
+    appType: 'apiApp'
+    WebAppName: 'NurseSchedulingApplication20220314043204'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'NurseSchedulingApplication20220314041830ResourceGroup'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
     enableCustomDeployment: true
     DeploymentType: 'webDeploy'
 - task: AzureRmWebAppDeployment@4

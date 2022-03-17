@@ -122,7 +122,7 @@
                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                             </asp:GridView>
                             <br />
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:nurse_scheduling_systemConnectionString %>" SelectCommand="SELECT * FROM [hospital_Requests] WHERE ([h_shiftDate] = @h_shiftDate)">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conString %>" SelectCommand="SELECT * FROM [hospital_Requests] WHERE ([h_shiftDate] = @h_shiftDate)">
                                 <SelectParameters>
                                     <asp:QueryStringParameter Name="h_shiftDate" QueryStringField="Date" Type="DateTime" />
                                 </SelectParameters>
@@ -159,7 +159,7 @@
                                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                 </asp:GridView>
                                 <br />
-                                <asp:SqlDataSource ID="unallocatedsqlsource" runat="server" ConnectionString="<%$ ConnectionStrings:nurse_scheduling_systemConnectionString %>" SelectCommand="SELECT * FROM [h_UnAllocatedRequests] WHERE ([h_shiftDate] = @h_shiftDate)">
+                                <asp:SqlDataSource ID="unallocatedsqlsource" runat="server" ConnectionString="<%$ ConnectionStrings:conString %>" SelectCommand="SELECT * FROM [h_UnAllocatedRequests] WHERE ([h_shiftDate] = @h_shiftDate)">
                                     <SelectParameters>
                                         <asp:QueryStringParameter Name="h_shiftDate" QueryStringField="Date" Type="DateTime" />
                                     </SelectParameters>
@@ -196,7 +196,7 @@
                                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                 </asp:GridView>
                                 <br />
-                                <asp:SqlDataSource ID="nursesqldatasource" runat="server" ConnectionString="<%$ ConnectionStrings:nurse_scheduling_systemConnectionString %>" SelectCommand="SELECT * FROM [nur_preferences] WHERE (([nu_shiftDate] = @nu_shiftDate) AND ([nu_isAllocated] = @nu_isAllocated))">
+                                <asp:SqlDataSource ID="nursesqldatasource" runat="server" ConnectionString="<%$ ConnectionStrings:conString %>" SelectCommand="SELECT * FROM [nur_preferences] WHERE (([nu_shiftDate] = @nu_shiftDate) AND ([nu_isAllocated] = @nu_isAllocated))">
                                     <SelectParameters>
                                         <asp:QueryStringParameter DefaultValue="" Name="nu_shiftDate" QueryStringField="Date" Type="DateTime" />
                                         <asp:Parameter DefaultValue="N" Name="nu_isAllocated" Type="String" />

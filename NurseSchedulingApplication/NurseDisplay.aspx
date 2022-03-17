@@ -78,7 +78,7 @@
                             </asp:GridView>
                         
                             <br />
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"  ConnectionString="<%$ ConnectionStrings:nurse_scheduling_systemConnectionString %>" SelectCommand="SELECT [nu_location], [nu_shiftDate], [nu_s1], [nu_s2], [nu_s3], [nu_s4], [nu_isAllocated] FROM [nur_preferences]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"  ConnectionString="<%$ conString %>" SelectCommand="SELECT [nu_location], [nu_shiftDate], [nu_s1], [nu_s2], [nu_s3], [nu_s4], [nu_isAllocated] FROM [nur_preferences]"></asp:SqlDataSource>
                         
                           </div>
 

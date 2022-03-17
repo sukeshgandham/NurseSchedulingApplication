@@ -87,7 +87,7 @@
                 </asp:GridView>
 
                 <br />
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:nurse_scheduling_systemConnectionString %>" SelectCommand="SELECT * FROM [nur_preferences] WHERE (([nu_Id] = @nu_Id) AND ([nu_isAllocated] = @nu_isAllocated))">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conString %>" SelectCommand="SELECT * FROM [nur_preferences] WHERE (([nu_Id] = @nu_Id) AND ([nu_isAllocated] = @nu_isAllocated))">
                     <SelectParameters>
                         <asp:CookieParameter CookieName="UserID" Name="nu_Id" Type="Int32" />
                         <asp:Parameter DefaultValue="Y" Name="nu_isAllocated" Type="String" />
